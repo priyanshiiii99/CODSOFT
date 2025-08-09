@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masala & Chai - Authentic Indian Café & Tea House</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+</style>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#9B2335',
+secondary: '#E4A853'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+},
+fontFamily: {
+'pacifico': ['Pacifico', 'serif'],
+'playfair': ['Playfair Display', 'serif'],
+'inter': ['Inter', 'sans-serif']
+}
+}
+}
+}
+</script>
+</head>
+<body class="font-inter bg-white">
+<!-- Hero Section -->
+<section class="relative min-h-screen w-full flex items-center justify-center overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=Warm%20inviting%20modern%20cafe%20interior%20with%20natural%20lighting%2C%20wooden%20furniture%2C%20exposed%20brick%20walls%2C%20hanging%20plants%2C%20coffee%20preparation%20area%20in%20background%2C%20cozy%20atmosphere%20with%20soft%20morning%20light%20streaming%20through%20large%20windows%2C%20minimalist%20design%20with%20earth%20tones%2C%20professional%20photography%20style&width=1920&height=1080&seq=hero001&orientation=landscape'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-black bg-opacity-30"></div>
+<!-- Navigation -->
+<nav class="absolute top-0 left-0 right-0 z-20 px-6 py-6">
+<div class="flex items-center justify-between max-w-7xl mx-auto">
+<div class="font-pacifico text-2xl text-white">Masala & Chai</div>
+<div class="hidden md:flex space-x-8 text-white">
+<a href="#menu" class="hover:text-secondary transition-colors">Menu</a>
+<a href="#about" class="hover:text-secondary transition-colors">About</a>
+<a href="#gallery" class="hover:text-secondary transition-colors">Gallery</a>
+<a href="#contact" class="hover:text-secondary transition-colors">Contact</a>
+</div>
+</div>
+</nav>
+<div class="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
+<h1 class="font-playfair text-5xl md:text-7xl font-bold mb-6 leading-tight">Welcome to<br>Masala & Chai</h1>
+<p class="text-xl md:text-2xl mb-8 font-light">Authentic Indian Tea & Traditional Delicacies</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+<button class="bg-primary hover:bg-opacity-90 text-white px-8 py-4 !rounded-button font-semibold transition-all whitespace-nowrap">View Menu</button>
+<button class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 !rounded-button font-semibold transition-all whitespace-nowrap">Reserve a Table</button>
+</div>
+<div class="text-lg">
+<p class="mb-2">Open Daily</p>
+<p class="font-light">Monday - Friday: 7:00 AM - 9:00 PM</p>
+<p class="font-light">Saturday - Sunday: 8:00 AM - 10:00 PM</p>
+</div>
+</div>
+<div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-arrow-down-line ri-lg"></i>
+</div>
+</div>
+</section>
+<!-- Welcome Story Section -->
+<section id="about" class="py-20 px-6 bg-gradient-to-b from-amber-50 to-white">
+<div class="max-w-6xl mx-auto">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-playfair text-4xl md:text-5xl font-bold text-primary mb-6">Our Story</h2>
+<p class="text-lg text-gray-700 mb-6 leading-relaxed">
+Inspired by the vibrant tea culture of India, Masala & Chai brings the authentic flavors and warm hospitality of traditional Indian cafes to the heart of the city. Our space is a celebration of India's rich culinary heritage and communal dining tradition.
+</p>
+<p class="text-lg text-gray-700 mb-6 leading-relaxed">
+Our founders, Priya and Raj, grew up in the bustling chai stalls of Mumbai and the serene tea gardens of Darjeeling. They bring generations of family recipes and tea blending expertise to create an authentic Indian café experience.
+</p>
+<div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-secondary">
+<p class="font-playfair text-xl text-primary italic">"We believe that great coffee brings people together, creates conversations, and makes ordinary moments extraordinary."</p>
+<p class="text-gray-600 mt-2">- Sarah & Michael, Founders</p>
+</div>
+</div>
+<div class="relative">
+<img src="images/cfe24fa6afe7a5cbd0280e58cac4bd82.jpg" alt="Cafe Owners" class="rounded-lg shadow-lg object-cover w-full h-96">
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Highlights -->
+<section id="menu" class="py-20 px-6 bg-white">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-playfair text-4xl md:text-5xl font-bold text-primary mb-4">Menu Highlights</h2>
+<p class="text-xl text-gray-600">Discover our signature creations crafted with love</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+<div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="relative overflow-hidden">
+<img src="images/0b09fbd4c44948ab0b40ac59a5ef072d.jpg" alt="Masala Chai" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+</div>
+<div class="p-6">
+<h3 class="font-playfair text-xl font-semibold text-primary mb-2">Masala Chai</h3>
+<p class="text-gray-600 mb-3">Traditional Indian spiced tea with cardamom, ginger, cinnamon, and fresh-ground spices, served with organic milk</p>
+<div class="flex justify-between items-center">
+<span class="text-2xl font-bold text-secondary">₹180</span>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="relative overflow-hidden">
+<img src="images/5887cf8dd44d33ea4be6850f260d17d3.jpg" alt="Samosa Platter" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+</div>
+<div class="p-6">
+<h3 class="font-playfair text-xl font-semibold text-primary mb-2">Samosa Platter</h3>
+<p class="text-gray-600 mb-3">Crispy pastries filled with spiced potatoes and peas, served with mint and tamarind chutneys</p>
+<div class="flex justify-between items-center">
+<span class="text-2xl font-bold text-secondary">₹220</span>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="relative overflow-hidden">
+<img src="images/a95a222609c923f2bba41248512982c1.jpg" alt="Mumbai Pav Bhaji" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+</div>
+<div class="p-6">
+<h3 class="font-playfair text-xl font-semibold text-primary mb-2">Mumbai Pav Bhaji</h3>
+<p class="text-gray-600 mb-3">Spiced vegetable curry served with buttered toasted bread, fresh onions, and lemon wedges</p>
+<div class="flex justify-between items-center">
+<span class="text-2xl font-bold text-secondary">₹280</span>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="relative overflow-hidden">
+<img src="images/79cdb7ad08d7d400cf2a23216123b25f.jpg" alt="Mango Lassi" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+</div>
+<div class="p-6">
+<h3 class="font-playfair text-xl font-semibold text-primary mb-2">Mango Lassi</h3>
+<p class="text-gray-600 mb-3">Creamy yogurt smoothie with fresh Alphonso mangoes, cardamom, and a touch of saffron</p>
+<div class="flex justify-between items-center">
+<span class="text-2xl font-bold text-secondary">₹160</span>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="relative overflow-hidden">
+<img src="images/35a575161efb18cd9c7a1419b145bce2.jpg" alt="Gulab Jamun" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+</div>
+<div class="p-6">
+<h3 class="font-playfair text-xl font-semibold text-primary mb-2">Gulab Jamun</h3>
+<p class="text-gray-600 mb-3">Traditional Indian dessert of soft milk dumplings in aromatic rose and cardamom syrup</p>
+<div class="flex justify-between items-center">
+<span class="text-2xl font-bold text-secondary">₹140</span>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="relative overflow-hidden">
+<img src="images/5405734bec2b15eecf20faff7add34a3.jpg" alt="Butter Chicken Roll" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+</div>
+<div class="p-6">
+<h3 class="font-playfair text-xl font-semibold text-primary mb-2">Butter Chicken Roll</h3>
+<p class="text-gray-600 mb-3">Tender chicken in rich tomato-butter gravy wrapped in fresh naan with mint chutney</p>
+<div class="flex justify-between items-center">
+<span class="text-2xl font-bold text-secondary">₹260</span>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center">
+<button class="bg-primary hover:bg-opacity-90 text-white px-8 py-4 !rounded-button font-semibold transition-all whitespace-nowrap">View Full Menu</button>
+</div>
+</div>
+</section>
+<!-- Special Features -->
+<section class="py-20 px-6 bg-gradient-to-b from-amber-50 to-orange-50">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-playfair text-4xl md:text-5xl font-bold text-primary mb-4">What Makes Us Special</h2>
+<p class="text-xl text-gray-600">Three pillars of our commitment to excellence</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="text-center bg-white p-8 rounded-lg shadow-sm">
+<div class="w-16 h-16 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-plant-line ri-2x text-secondary"></i>
+</div>
+<h3 class="font-playfair text-2xl font-semibold text-primary mb-4">Authentic Spices</h3>
+<p class="text-gray-600 leading-relaxed">Our spices are sourced directly from India's finest spice gardens, ground fresh daily to create authentic flavors that transport you to the streets of Mumbai.</p>
+</div>
+<div class="text-center bg-white p-8 rounded-lg shadow-sm">
+<div class="w-16 h-16 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-cup-line ri-2x text-secondary"></i>
+</div>
+<h3 class="font-playfair text-2xl font-semibold text-primary mb-4">Premium Tea Selection</h3>
+<p class="text-gray-600 leading-relaxed">Our carefully curated selection of teas comes from India's finest tea estates in Darjeeling, Assam, and the Nilgiris, offering authentic chai and specialty blends.</p>
+</div>
+<div class="text-center bg-white p-8 rounded-lg shadow-sm">
+<div class="w-16 h-16 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-cake-3-line ri-2x text-secondary"></i>
+</div>
+<h3 class="font-playfair text-2xl font-semibold text-primary mb-4">Traditional Snacks</h3>
+<p class="text-gray-600 leading-relaxed">Our kitchen prepares authentic Indian snacks and street food favorites daily, using traditional recipes and techniques passed down through generations.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Ambiance Gallery -->
+<section id="gallery" class="py-20 px-6 bg-white">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-playfair text-4xl md:text-5xl font-bold text-primary mb-4">Our Ambiance</h2>
+<p class="text-xl text-gray-600">Step into our world of warmth and comfort</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="col-span-2 row-span-2">
+<img src="images/c3508030112303652a64dda73454937b.jpg" alt="Interior Design" class="w-full h-full object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+</div>
+<div>
+<img src="images/d2c228061b3ca0dea1785b502f43df3a.jpg" alt="Outdoor Seating" class="w-full h-full object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+</div>
+<div>
+<img src="images/81d5e0d45ac271df567b05f5369e45d7.jpg" alt="Coffee Art" class="w-full h-full object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+</div>
+<div>
+<img src="images/1620d13b3b4b62a6f34c04605d06fff2.jpg" alt="Food Presentation" class="w-full h-full object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+</div>
+<div>
+<img src="images/a7774421b4c9d545ae49c1bc87ead1d1.jpg" alt="Happy Customers" class="w-full h-full object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+</div>
+</div>
+</div>
+</section>
+<!-- Customer Reviews -->
+<section class="py-20 px-6 bg-gradient-to-b from-orange-50 to-amber-50">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-playfair text-4xl md:text-5xl font-bold text-primary mb-4">What Our Customers Say</h2>
+<p class="text-xl text-gray-600">Real stories from our coffee community</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<div class="flex mb-4">
+<i class="ri-star-fill text-yellow-400 text-xl"></i>
+<i class="ri-star-fill text-yellow-400 text-xl"></i>
+<i class="ri-star-fill text-yellow-400 text-xl"></i>
+<i class="ri-star-fill text-yellow-400 text-xl"></i>
+<i class="ri-star-fill text-yellow-400 text-xl"></i>
+</div>
+<p class="text-gray-700 mb-6 italic">"The most authentic masala chai I've had outside my grandmother's kitchen! Their samosas are perfectly crispy and the ambiance takes me back to the cafes of old Delhi."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+<i class="ri-user-line text-secondary"></i>
+</div>
+<div>
+<p class="font-semibold text-primary">Priya Sharma</p>
+<p class="text-gray-600 text-sm">Food Blogger</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<div class="flex mb-4">
+<i class="ri-star-fill text-yellow-400 text-xl"></i>
+<i class="ri-star-fill text-yellow-400 text-xl"></i>
+<i class="ri-star-fill text-yellow-400 text-xl"></i>
+<i class="ri-star-fill text-yellow-400 text-xl"></i>
+<i class="ri-star-fill text-yellow-400 text-xl"></i>
+</div>
+<p class="text-gray-700 mb-6 italic">"Masala & Chai feels like a slice of India in the city. Their pav bhaji is exactly how I remember it from Mumbai's streets, and the chai is perfectly spiced!"</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+<i class="ri-user-line text-secondary"></i>
+</div>
+<div>
+<p class="font-semibold text-primary">Rajesh Patel</p>
+<p class="text-gray-600 text-sm">Regular Customer</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<div class="flex mb-4">
+<i class="ri-star-fill text-yellow-400 text-xl"></i>
+<i class="ri-star-fill text-yellow-400 text-xl"></i>
+<i class="ri-star-fill text-yellow-400 text-xl"></i>
+<i class="ri-star-fill text-yellow-400 text-xl"></i>
+<i class="ri-star-fill text-yellow-400 text-xl"></i>
+</div>
+<p class="text-gray-700 mb-6 italic">"The perfect spot for our weekend family gatherings. The mango lassi is heavenly, and their butter chicken roll is a must-try! Love the traditional decor too."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+<i class="ri-user-line text-secondary"></i>
+</div>
+<div>
+<p class="font-semibold text-primary">Anita Desai</p>
+<p class="text-gray-600 text-sm">Family Customer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location & Contact -->
+<section id="contact" class="py-20 px-6 bg-white">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-playfair text-4xl md:text-5xl font-bold text-primary mb-4">Visit Us Today</h2>
+<p class="text-xl text-gray-600">Find us in the heart of karnataka </p>
+</div>
+<div class="grid lg:grid-cols-2 gap-12">
+<div>
+<div class="bg-gray-200 rounded-lg h-96 flex items-center justify-center mb-8" style="background-image: url('https://readdy.ai/api/search-image?query=Stylized%20map%20of%20India%20with%20major%20landmarks%20and%20cities%20illustrated%2C%20modern%20design%20with%20vibrant%20colors%2C%20decorative%20elements%20showing%20cultural%20diversity&width=1280&height=720&seq=indiamap001&orientation=landscape'); background-size: cover; background-position: center;">
+</div>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="bg-amber-50 p-6 rounded-lg">
+<div class="w-12 h-12 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mb-4">
+<i class="ri-map-pin-line text-primary text-xl"></i>
+</div>
+<h3 class="font-semibold text-primary mb-2">Address</h3>
+<p class="text-gray-700">yu art cafe No 23, KHB MIG Colony, Koramangala 8th Block, Koramangala, Bengaluru, Karnataka 560095</p>
+</div>
+<div class="bg-amber-50 p-6 rounded-lg">
+<div class="w-12 h-12 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mb-4">
+<i class="ri-phone-line text-primary text-xl"></i>
+</div>
+<h3 class="font-semibold text-primary mb-2">Contact</h3>
+<p class="text-gray-700">Phone: 9743458729<br>Email: masalachaii@gmail.com</p>
+</div>
+</div>
+</div>
+<div>
+<div class="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-lg">
+<h3 class="font-playfair text-2xl font-semibold text-primary mb-6">Reserve Your Table</h3>
+<form class="space-y-4">
+<div class="grid md:grid-cols-2 gap-4">
+<input type="text" placeholder="First Name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+<input type="text" placeholder="Last Name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+</div>
+<input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+<input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+<div class="grid md:grid-cols-2 gap-4">
+<input type="date" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+<input type="time" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+</div>
+<select class="w-full px-4 py-3 pr-8 rounded-lg border border-gray-300 focus:border-primary focus:outline-none appearance-none bg-white">
+<option>Number of Guests</option>
+<option>1 Guest</option>
+<option>2 Guests</option>
+<option>3 Guests</option>
+<option>4 Guests</option>
+<option>5+ Guests</option>
+</select>
+<textarea placeholder="Special Requests" rows="3" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none resize-none"></textarea>
+<button type="submit" class="w-full bg-primary hover:bg-opacity-90 text-white py-3 !rounded-button font-semibold transition-all whitespace-nowrap">Make Reservation</button>
+</form>
+</div>
+<div class="mt-8 bg-primary bg-opacity-10 p-6 rounded-lg">
+<h4 class="font-semibold text-primary mb-3">Parking Information</h4>
+<p class="text-gray-700 text-sm">Free street parking available on Coffee Street and adjacent blocks. Paid parking garage located 2 blocks away on Main Street.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-white py-16 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="grid md:grid-cols-4 gap-8 mb-12">
+<div>
+<div class="font-pacifico text-2xl mb-4">Masala & Chaii</div>
+<p class="text-orange-100 mb-6">Creating memorable coffee experiences in the heart of Karnataka since 2024.</p>
+<div class="flex space-x-4">
+<div class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all cursor-pointer">
+<i class="ri-facebook-fill text-white"></i>
+</div>
+<div class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all cursor-pointer">
+<i class="ri-instagram-line text-white"></i>
+</div>
+<div class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all cursor-pointer">
+<i class="ri-twitter-line text-white"></i>
+</div>
+</div>
+</div>
+<div>
+<h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+<ul class="space-y-2 text-orange-100">
+<li><a href="#menu" class="hover:text-white transition-colors">Menu</a></li>
+<li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+<li><a href="#gallery" class="hover:text-white transition-colors">Gallery</a></li>
+<li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-lg mb-4">Opening Hours</h4>
+<div class="text-orange-100 space-y-1">
+<p>Monday - Friday</p>
+<p class="font-light">7:00 AM - 9:00 PM</p>
+<p class="mt-2">Saturday - Sunday</p>
+<p class="font-light">8:00 AM - 10:00 PM</p>
+</div>
+</div>
+<div>
+<h4 class="font-semibold text-lg mb-4">Newsletter</h4>
+<p class="text-orange-100 mb-4">Subscribe for special offers and updates</p>
+<div class="flex gap-2">
+<input type="email" placeholder="Your email" class="flex-1 px-3 py-2 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white placeholder-orange-200 focus:outline-none focus:bg-opacity-30">
+<button class="bg-secondary hover:bg-opacity-90 px-4 py-2 !rounded-button font-semibold transition-all whitespace-nowrap">Subscribe</button>
+</div>
+</div>
+</div>
+<div class="border-t border-white border-opacity-20 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-orange-100 text-sm">© 2024 Masala & Chai Café. All rights reserved.</p>
+<div class="flex space-x-6 text-orange-100 text-sm mt-4 md:mt-0">
+<a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+<a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script id="smooth-scroll">
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+targetElement.scrollIntoView({
+behavior: 'smooth',
+block: 'start'
+});
+}
+});
+});
+});
+</script>
+<script id="gallery-lightbox">
+document.addEventListener('DOMContentLoaded', function() {
+const galleryImages = document.querySelectorAll('#gallery img');
+galleryImages.forEach(img => {
+img.addEventListener('click', function() {
+const lightbox = document.createElement('div');
+lightbox.className = 'fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4';
+lightbox.innerHTML = `
+<div class="relative max-w-4xl max-h-full">
+<img src="${this.src}" alt="${this.alt}" class="max-w-full max-h-full object-contain rounded-lg">
+<button class="absolute top-4 right-4 text-white text-2xl hover:text-gray-300 transition-colors">
+<i class="ri-close-line"></i>
+</button>
+</div>
+`;
+document.body.appendChild(lightbox);
+document.body.style.overflow = 'hidden';
+lightbox.addEventListener('click', function(e) {
+if (e.target === lightbox || e.target.closest('button')) {
+document.body.removeChild(lightbox);
+document.body.style.overflow = 'auto';
+}
+});
+});
+});
+});
+</script>
+<script id="reservation-form">
+document.addEventListener('DOMContentLoaded', function() {
+const reservationForm = document.querySelector('form');
+reservationForm.addEventListener('submit', function(e) {
+e.preventDefault();
+const formData = new FormData(this);
+const data = Object.fromEntries(formData);
+const submitButton = this.querySelector('button[type="submit"]');
+const originalText = submitButton.textContent;
+submitButton.textContent = 'Processing...';
+submitButton.disabled = true;
+setTimeout(() => {
+alert('Thank you for your reservation! We will contact you shortly to confirm your booking.');
+this.reset();
+submitButton.textContent = originalText;
+submitButton.disabled = false;
+}, 2000);
+});
+});
+</script>
+</body>
+</html>
